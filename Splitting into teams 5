@@ -1,0 +1,110 @@
+Splitting into teams 5
+Input Format
+
+Input consists of 2 integers. The first integer corresponds to the number of students in the class. The second integer corresponds to the number of teams.
+
+Constraints
+
+1<=n<=10^7
+
+Output Format
+
+Output consists of 2 integers. The first integer corresponds to the number of students in the each team. The second integer corresponds to the remaining students.
+
+Sample Input 0
+
+60
+8
+Sample Output 0
+
+The number of students in each team is 7 and left out is 4
+Sample Input 1
+
+78
+6
+Sample Output 1
+
+The number of students in each team is 13 and left out is 0
+Sample Input 2
+
+40
+6
+Sample Output 2
+
+The number of students in each team is 6 and left out is 4
+Sample Input 3
+
+80
+3
+Sample Output 3
+
+The number of students in each team is 26 and left out is 2
+Submissions: 831
+Max Score: 0
+Difficulty: Medium
+Rate This Challenge:
+
+    
+More
+ 
+1
+import java.io.*;
+2
+import java.util.*;
+3
+​
+4
+public class Solution {
+5
+    
+6
+​
+7
+    public static void main(String[] args) {
+8
+        Scanner s=new Scanner(System.in);
+9
+        int a,b;
+10
+        a=s.nextInt();
+11
+        b=s.nextInt();
+12
+        int r1=a/b;
+13
+        int  r2=a%b;
+14
+        System.out.println("The number of students in each team is "+r1+" and left out is "+r2+"");
+15
+​
+16
+        
+17
+            
+18
+        
+19
+    }
+20
+}
+Line: 11 Col: 21
+Run Code Submit CodeUpload Code as File 
+Test against custom input
+Testcase 0
+Testcase 1
+Testcase 2
+Testcase 3
+Congratulations, you passed the sample test case.
+
+Click the Submit Code button to run your code against all the test cases.
+
+Input (stdin)
+
+60
+8
+Your Output (stdout)
+
+The number of students in each team is 7 and left out is 4
+Expected Output
+
+The number of students in each team is 7 and left out is 4
