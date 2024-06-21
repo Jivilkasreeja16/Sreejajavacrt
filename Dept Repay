@@ -1,0 +1,107 @@
+Dept Repay
+Input Format
+
+Input consists of 3 integers. The first integer corresponds to the principal amount borrowed by Alice. The second integer corresponds to the rate of interest The third integer corresponds to the number of years.
+
+Constraints
+
+1<=n<=10^7
+
+Output Format
+
+The output consists of 4 floating point values. The first value corresponds to the interest. The second corresponds to the amount. The third value corresponds to the discount. The last value corresponds to the final settlement. All floating point values are to be rounded off to two decimal places
+
+Sample Input 0
+
+100
+1
+10
+Sample Output 0
+
+10.00
+110.00
+0.20
+109.80
+Sample Input 1
+
+10000
+10
+5
+Sample Output 1
+
+5000.00
+15000.00
+100.00
+14900.00
+Submissions: 788
+Max Score: 0
+Difficulty: Medium
+Rate This Challenge:
+
+    
+More
+ 
+1
+import java.io.*;
+2
+import java.util.*;
+3
+​
+4
+public class Solution {
+5
+​
+6
+    public static void main(String[] args) {
+7
+        Scanner s=new Scanner(System.in);
+8
+        int p,t,r;
+9
+        p=s.nextInt();
+10
+        t=s.nextInt();
+11
+        r=s.nextInt();
+12
+        float r1=p*t*r/100;
+13
+        System.out.printf("%.2f\n",r1);
+14
+        float r2=p+r1;
+15
+        System.out.printf("%.2f\n",r2);
+16
+        float r3=r1*2/100;
+17
+        System.out.printf("%.2f\n",r3);
+18
+        float r4=r2-r3;
+19
+        System.out.printf("%.2f\n",r4);
+20
+    }
+21
+}  
+22Congratulations, you passed the sample test case.
+
+Click the Submit Code button to run your code against all the test cases.
+
+Input (stdin)
+
+100
+1
+10
+Your Output (stdout)
+
+10.00
+110.00
+0.20
+109.80
+Expected Output
+
+10.00
+110.00
+0.20
+109.80
+​
