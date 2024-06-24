@@ -1,0 +1,125 @@
+sum of odd and even 2
+Input Format
+
+Integer corresponds to the size of the array. Read n elements line by line
+
+Constraints
+
+1<=n<=10^7
+
+Output Format
+
+Print Odd sum Print Even sum
+
+Sample Input 0
+
+3
+31
+28
+13
+Sample Output 0
+
+44
+28
+Sample Input 1
+
+6
+12
+100
+28
+31
+22
+45
+Sample Output 1
+
+76
+162
+Submissions: 635
+Max Score: 0
+Difficulty: Medium
+Rate This Challenge:
+
+    
+More
+ 
+1
+import java.io.*;
+2
+import java.util.*;
+3
+​
+4
+public class Solution {
+5
+​
+6
+    public static void main(String[] args) {
+7
+        Scanner s=new Scanner(System.in);
+8
+        int n=s.nextInt();
+9
+        int a[]=new int[n];
+10
+        for(int i=0;i<n;i++)
+11
+        {
+12
+            a[i]=s.nextInt();
+13
+        }
+14
+            int sodd=0,seven=0;
+15
+            for(int i=0;i<n;i++)
+16
+                if(a[i]%2==0)
+17
+                {
+18
+                   seven=seven+a[i];
+19
+                }
+20
+                else
+21
+                 {
+22
+                    sodd=sodd+a[i];
+23
+             }
+24
+             
+25
+             System.out.printf("%d\n%d",sodd,seven);
+26
+             
+27
+             
+28
+         
+29
+            
+30
+        }
+31
+    }
+32Input (stdin)
+
+3
+31
+28
+13
+Your Output (stdout)
+
+44
+28
+Expected Output
+
+44
+28
+​
+33
+    
+34
+        
