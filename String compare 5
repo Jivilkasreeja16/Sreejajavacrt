@@ -1,0 +1,83 @@
+String compare 5
+Input Format
+
+Input consists of 2 strings.
+
+Constraints
+
+string
+
+Output Format
+
+If two strings are same, display “Strings are same”, else display “Strings are not same”.
+
+Sample Input 0
+
+java
+java
+Sample Output 0
+
+Strings are same
+Sample Input 1
+
+python
+Java
+Sample Output 1
+
+Strings are not same
+Submissions: 564
+Max Score: 0
+Difficulty: Medium
+Rate This Challenge:
+
+    
+More
+ 
+s
+1
+import java.io.*;
+2
+import java.util.*;
+3
+​
+4
+public class Solution {
+5
+​
+6
+    public static void main(String[] args) {
+7
+       Scanner s=new Scanner(System.in);
+8
+        String str1=s.next();
+9
+        String str2=s.next();
+10
+        
+11
+        if(str1.equalsIgnoreCase(str2))
+12
+        
+13
+            System.out.println("Strings are same");
+14
+        else
+15
+            System.out.println("Strings are not same");
+16
+    }
+17
+}   
+18
+        
+Line: 13 Col: 46
+Input (stdin)
+
+java
+java
+Your Output (stdout)
+
+Strings are same
+Expected Output
+
+Strings are same
